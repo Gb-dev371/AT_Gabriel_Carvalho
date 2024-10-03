@@ -14,7 +14,14 @@ const images = [
 
 const Home = () => {
   return (
-    <main className="home">
+    <main
+      className="home"
+      style={{
+        padding: "20px",
+        backgroundColor: "#f7f7f7",
+        textAlign: "center",
+      }}
+    >
       <section id="carousel-section">
         <h2>Bitcoin Evolution</h2>
         <Carousel images={images} />
