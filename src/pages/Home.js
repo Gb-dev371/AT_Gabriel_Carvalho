@@ -22,6 +22,23 @@ const Home = () => {
         textAlign: "center",
       }}
     >
+      <div className="grid-container">
+        <div className="grid-item">
+          <h3>What is Bitcoin?</h3>
+          <p>
+            Bitcoin is a decentralized digital currency without a central bank
+            or single administrator.
+          </p>
+        </div>
+        <div className="grid-item">
+          <h3>How Does Bitcoin Work?</h3>
+          <p>
+            Learn the underlying technology that powers Bitcoin, including
+            blockchain and mining.
+          </p>
+        </div>
+      </div>
+
       <section id="carousel-section">
         <h2>Bitcoin Evolution</h2>
         <Carousel images={images} />
