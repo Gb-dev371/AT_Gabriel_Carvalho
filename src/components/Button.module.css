@@ -1,0 +1,44 @@
+/* Estilos básicos para todos os botões */
+.btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo para o botão primário */
+.primary {
+  background-color: #2196f3;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #1976d2;
+}
+
+/* Estilo para o botão secundário */
+.secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.secondary:hover {
+  background-color: #bdbdbd;
+}
+
+/* Tamanhos dos botões */
+.small {
+  font-size: 0.8rem;
+  padding: 8px 16px;
+}
+
+.medium {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.large {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+}

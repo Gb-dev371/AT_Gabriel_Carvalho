@@ -4,6 +4,7 @@ import Carousel from "../components/Carousel";
 import Card from "../components/Card";
 import ProgressBar from "../components/ProgressBar";
 import VideoCard from "../components/VideoCard";
+import ToggleSwitch from "../components/ToggleSwitch";
 import "./Home.css";
 
 const images = [
@@ -123,6 +124,7 @@ const Home = () => {
           description="Understand how Bitcoin mining works and why it's essential for the network."
         />
       </section>
+      <ToggleSwitch />
     </main>
   );
 };

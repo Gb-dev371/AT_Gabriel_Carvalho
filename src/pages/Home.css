@@ -30,7 +30,7 @@ main {
 }
 
 .grid-item p {
-  color: #777;
+  color: #333 !important;
 }
 
 /* Seção do carrossel */
