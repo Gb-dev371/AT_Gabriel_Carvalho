@@ -1,0 +1,43 @@
+/* Contêiner da barra de progresso */
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 15px 0;
+  position: relative;
+}
+
+/* A barra de progresso preenchida */
+.progress {
+  height: 30px;
+  background-color: #4caf50;
+  width: 0; /* Inicialmente sem progresso */
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px; /* Centraliza o texto verticalmente */
+  color: white;
+  font-weight: bold;
+  transition: width 0.5s ease; /* Animação suave do progresso */
+}
+
+/* Efeito de sombra ao passar o mouse sobre a barra */
+.progress-bar:hover .progress {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes de altura e fonte para dispositivos menores */
+@media (max-width: 768px) {
+  .progress {
+    height: 25px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .progress {
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.8rem;
+  }
+}

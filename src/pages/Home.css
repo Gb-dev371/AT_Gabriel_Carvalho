@@ -1,0 +1,118 @@
+/* Estilo básico para o main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Seção do carrossel */
+#carousel-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+#carousel-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Seção de Cartões (informações sobre Bitcoin) */
+#cards-section {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+#cards-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards .card {
+  margin: 10px;
+}
+
+/* Seção de Progress Bar (adoção do Bitcoin) */
+#progress-section {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#progress-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#toggle-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#toggle-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding: 15px;
+  }
+
+  #carousel-section h2,
+  #cards-section h2,
+  #progress-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #carousel-section h2,
+  #cards-section h2,
+  #progress-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cards .card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #carousel-section h2,
+  #cards-section h2,
+  #progress-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .cards .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #progress-section {
+    max-width: 100%;
+  }
+}

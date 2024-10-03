@@ -1,0 +1,72 @@
+/* Estilo principal para o cartão de vídeo */
+.video-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Contêiner do vídeo */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin-bottom: 15px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Título do vídeo */
+.video-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Descrição do vídeo */
+.video-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Link para ver o vídeo no YouTube */
+.video-card a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.video-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .video-card {
+    padding: 10px;
+  }
+
+  .video-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .video-card p {
+    font-size: 0.9rem;
+  }
+}
