@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import ProgressBar from "../components/ProgressBar";
 import VideoCard from "../components/VideoCard";
 import ToggleSwitch from "../components/ToggleSwitch";
+import Button from "../components/Button"; // Importando o componente Button
 import "./Home.css";
 
 const images = [
@@ -124,6 +125,9 @@ const Home = () => {
           description="Understand how Bitcoin mining works and why it's essential for the network."
         />
       </section>
+      <Button primary={true} size="medium">
+        Bitcoin Button
+      </Button>
       <ToggleSwitch />
     </main>
   );
